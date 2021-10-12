@@ -1,0 +1,3 @@
+This project's source code is publicly available but not covered by any OSS license.
+
+Please view [No License](https://choosealicense.com/no-permission/) to learn more.
