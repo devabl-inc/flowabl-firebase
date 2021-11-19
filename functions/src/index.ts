@@ -1,7 +1,7 @@
 import * as functions from "firebase-functions";
 import axios from "axios";
 
-// Start writing Firebase Functions
+// Firebase Functions for different events
 
 // See auth trigger documentation https://firebase.google.com/docs/functions/auth-events
 exports.sendWelcomeEmail = functions.auth.user().onCreate((user) => {
