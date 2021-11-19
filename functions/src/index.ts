@@ -21,7 +21,13 @@ async function sendWelcomeEmail(email: string | undefined, displayName: string |
   try {
     await axios.post(
       `${FLOW_WEBOOK_URL}?workflowId=${JOIN_EMAIL_WORKFLOW_ID}&type=generic&access_token=${FLOW_ACCESS_TOKEN}`,
-      { name: displayName, email }
+      {
+        name: displayName,
+        email,
+        team: {
+          enabled: true,
+        },
+      }
     );
   } catch (err) {
     console.log(err);
